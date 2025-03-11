@@ -14,4 +14,28 @@ public struct Post: Equatable, Identifiable, Hashable, Decodable {
     public let commentCount: Int
     public let shareCount: Int
     public let createdAt: Date
+    
+    public init(
+        id: UUID,
+        user: User,
+        comments: [Comment],
+        imageUrl: String,
+        caption: String,
+        location: String,
+        likeCount: Int,
+        commentCount: Int,
+        shareCount: Int,
+        createdAt: Date
+    ) {
+        self.id = id
+        self.user = user
+        self.comments = comments
+        self.imageUrl = imageUrl
+        self.caption = caption
+        self.location = location
+        self.likeCount = likeCount
+        self.commentCount = commentCount
+        self.shareCount = shareCount
+        self.createdAt = createdAt
+    }
 }

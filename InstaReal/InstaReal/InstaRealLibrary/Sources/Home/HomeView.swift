@@ -76,7 +76,6 @@ public struct HomeView: View {
             }
         }
         .padding(.top, .medium3)
-        .padding(.bottom, .large4)
         .taskOnce {
             await viewModel.fetchData()
         }

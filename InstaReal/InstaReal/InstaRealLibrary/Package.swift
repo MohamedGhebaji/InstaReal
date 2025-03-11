@@ -20,6 +20,7 @@ let package = Package(
         .library(name: "PostDetail", targets: ["PostDetail"]),
         .library(name: "UUIDClient", targets: ["UUIDClient"]),
         .library(name: "DI", targets: ["DI"]),
+        .library(name: "TestUtils", targets: ["TestUtils"]),
     ],
     dependencies: [
         .package(url: "https://github.com/kean/Nuke", exact: "12.8.0"),
@@ -39,10 +40,6 @@ let package = Package(
         .target(
             name: "Models"
         ),
-        .testTarget(
-            name: "ModelsTests",
-            dependencies: ["Models"]
-        ),
         .target(
             name: "Home",
             dependencies: [
@@ -53,6 +50,13 @@ let package = Package(
                 "UUIDClient",
                 "Router",
                 "DI"
+            ]
+        ),
+        .testTarget(
+            name: "HomeTests",
+            dependencies: [
+                "Home",
+                "TestUtils"
             ]
         ),
         .target(
@@ -97,6 +101,13 @@ let package = Package(
         ),
         .target(
             name: "DI",
+            dependencies: [
+                "ApiClient",
+                "UUIDClient"
+            ]
+        ),
+        .target(
+            name: "TestUtils",
             dependencies: [
                 "ApiClient",
                 "UUIDClient"

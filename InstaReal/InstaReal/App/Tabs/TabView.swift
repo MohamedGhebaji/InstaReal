@@ -6,24 +6,18 @@ import Router
 
 struct TabView: View {
     
-    @StateObject private var routeurPath = RouterPath()
     @State var selectedTab: AppTab = .home
     var body: some View {
-        NavigationStack {
-            ZStack(alignment: .bottom) {
-                tabView
-                FloatingTabView(
-                    activeTab: $selectedTab,
-                    capturePhotoAction: {}
-                )
-            }
-            .withAppRouteur()
-            .withSheetDestinations(sheetDestinations: $routeurPath.presentedSheet)
-            .ignoresSafeArea(.keyboard)
-            .onAppear {
-                UITabBar.appearance().isHidden = true
-            }
-            .environmentObject(routeurPath)
+        ZStack(alignment: .bottom) {
+            tabView
+            FloatingTabView(
+                activeTab: $selectedTab,
+                capturePhotoAction: {}
+            )
+        }
+        .ignoresSafeArea(.keyboard)
+        .onAppear {
+            UITabBar.appearance().isHidden = true
         }
     }
 }
