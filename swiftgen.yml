@@ -1,0 +1,16 @@
+fonts:
+  inputs: InstaReal/InstaReal/InstaRealLibrary/Sources/DesignSystem/Resources/Fonts
+  outputs:
+    templateName: swift5
+    output: InstaReal/InstaReal/InstaRealLibrary/Sources/DesignSystem/Generated/Fonts.swift
+
+xcassets:
+  - inputs:
+    - InstaReal/InstaReal/InstaRealLibrary/Sources/DesignSystem/Resources/Icons.xcassets
+    - InstaReal/InstaReal/InstaRealLibrary/Sources/DesignSystem/Resources/Colors.xcassets
+    outputs:
+      templateName: swift5
+      output: InstaReal/InstaReal/InstaRealLibrary/Sources/DesignSystem/Generated/Assets.swift
+      params:
+        enumName: AppAsset
+        publicAccess: true

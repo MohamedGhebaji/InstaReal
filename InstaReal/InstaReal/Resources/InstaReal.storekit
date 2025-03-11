@@ -1,0 +1,170 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "2E161E62",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "21571380",
+      "localizations" : [
+
+      ],
+      "name" : "Plume Premium",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "17.99",
+          "familyShareable" : false,
+          "groupNumber" : 3,
+          "internalID" : "6742254980",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Unlock all InstaReal premium content",
+              "displayName" : "InstalReal PLUS – 3 Months",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "instareal_3_month_1999",
+          "recurringSubscriptionPeriod" : "P3M",
+          "referenceName" : "InstaReal : 3Month 19.99€",
+          "subscriptionGroupID" : "21571380",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "24.99",
+          "familyShareable" : false,
+          "groupNumber" : 2,
+          "internalID" : "6740414473",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Unlock all InstaReal premium content",
+              "displayName" : "InstaReal PLUS Annual Subscription",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "instareal_1_year_2999",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "InstaReal : Annual 29,99€",
+          "subscriptionGroupID" : "21571380",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "8.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "6737526950",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Unlock all InstaReal premium content",
+              "displayName" : "Monthly Subscription InstaReal PLUS",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "instareal_1_month_999",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "InstaReal : Monthly 9.99€",
+          "subscriptionGroupID" : "21571380",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}
